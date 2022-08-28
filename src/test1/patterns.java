@@ -129,6 +129,17 @@ public class patterns {
 			}
 			System.out.println();
 		}
+		System.out.println("==================Unique Pattern=================");
+		for(int i=0;i<=n;i++)
+		{
+			for(int j=0;j<=n;j++)
+			{
+				//each cell Distance from Wall
+				int everyIndex=n-Math.min(Math.min(i, j), Math.min(n-i, n-j));
+				System.out.print(everyIndex);
+			}
+			System.out.println();
+		}
 	}
 }
 
